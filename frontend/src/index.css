@@ -1,0 +1,22 @@
+main {
+  min-height: 80vh;
+  border: 2inch;
+  border-style: solid;
+  border-color: blue;
+}
+
+.h3-prdct-price {
+  margin-top: 8px;
+ 
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+.prodscrn-col {
+  border-width: 3px;
+  border-color: red;
+}
+
+
