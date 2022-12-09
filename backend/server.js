@@ -1,9 +1,11 @@
 import express from 'express';
+import dotenv from dotenv;
 import products from './data/products';
 
 const app = express();
+dotenv.config();
+
 app.get('/api/products', (req, res) => {
-  
   res.json(products);
 })
 
@@ -13,5 +15,5 @@ app.get('/api/product/:id', (req, res) => {
   res.json(product);
 })
 
-
-app.listen(8000, (console.log('Server started in port 8000')));
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, (console.log(`Server started in port ${PORT}`)));
